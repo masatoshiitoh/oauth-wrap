@@ -266,7 +266,7 @@ class OAuthWrapUtil
 		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 		// レスポンスを文字列として取得する設定
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		// (出力結果に)ヘッダは不要
+		// (出力結果に)ヘッダを含める
 		curl_setopt($ch, CURLOPT_HEADER, true);
 		
 		if (strcasecmp($request->get_normalized_http_method(), 'POST') == 0)
